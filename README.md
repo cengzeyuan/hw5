@@ -22,20 +22,20 @@ Project5：
 ####  butterworth低通滤波器  
 二维Butterworth低通滤波器中D0表示通带的半径，n是Butter-worth的阶数（此次实验都取2），次数过大会导致振铃现象越来越明显，在2阶的时候振铃很微小。  
 **结果展示：**  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/1.1.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/1.2.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/1.3.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/1.4.png)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/1.1.jpg)   
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/1.2.jpg)   
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/1.3.jpg)   
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/1.4.jpg)   
 **结果分析：**  
 首先可以清楚的得知Butterworth低通滤波器能够达到平滑、模糊图像的处理，也能在一定的程度上对一些特定噪音进行处理；  
 截止频率的选择，决定了滤波的效果，当截止频率越小，图像处理后越模糊，通过的功率在总功率中的占比也更小。  
 #### gaussian低通滤波器  
 二维gaussian低通滤波器中D(u , v)表示高斯曲线的拓展程度，D0则是低通滤波器的截至频率，由于gaussian低通滤波器的傅里叶反变换也是高斯的，故而通过变换和反变换后得到的空间gaussian滤波器将没有振铃效应。  
 **结果展示：**  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/1.5.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/1.6.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/1.7.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/1.8.png)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/1.5.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/1.6.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/1.7.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/1.8.jpg)  
 **结果分析：**  
 首先可以清楚的得知gaussian低通滤波器能够达到平滑、模糊图像的处理，也能在一定的程度上对一些特定噪音进行处理；  
 其次也和Butterworth低通滤波器相仿，截止频率的选择，决定了滤波的效果，当截止频率越小，图像处理后越模糊，通过的功率在总功率中的占比也更小。  
@@ -46,20 +46,20 @@ Project5：
 ####  butterworth高通滤波器  
 Butterworth高通滤波器中D0表示截止频率到原点的距离，N表示BHPF的阶数，只需在Butterworth低通滤波器的基础之上，修改滤波器函数H，其余操作不变。  
 **结果展示：**   
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/2.1.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/2.2.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/2.3.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/2.4.png)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/2.1.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/2.2.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/2.3.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/2.4.jpg)  
 **结果分析：**  
 对比每组原图和处理之后图像结果，可以清晰的知道高通滤波器和低通滤波器效果上的差别，高通滤波器增强的是图像的边缘，滤除了低频分量，保留变化剧烈的高频分量。
 滤波半径的选择在很大程度上影响了滤波的效果，半径越小，提取出来的边缘越明显；当半径过大时，可能会出现将边缘也一同滤除的“错误”。而随着半径的增大，功率谱变小，即滤波后包含的高频分量越来越少，与低通滤波器刚好相反。  
 ####  gaussian高通滤波器  
 Gaussian高通滤波器实际上是在其低通滤波器的基础上做一个简单的数学变换。其中同样的D0表示了高斯曲线的拓展程度；同样由于高斯滤波器在Fourier变换和反变换上的特殊性，得到的高斯空间滤波器没有振铃效应。在之前Gaussian低通滤波器的基础上修正滤波模板H；其余操作不变。  
 **结果展示：**  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/2.5.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/2.6.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/2.7.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/2.8.png)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/2.5.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/2.6.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/2.7.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/2.8.jpg)  
 **结果分析：**  
 同样的，对比每组原图和处理后的图像结果，可以清晰的知道高通滤波器和低通滤波器效果上的差别，高通滤波器增强的是图像的边缘，滤除了低频分量，保留变化剧烈的高频分量。
 同时，滤波半径的选择在很大程度上影响了滤波的效果，半径越小，提取出来的边缘越明显；当半径过大，甚至可能将边缘也以同滤除。而随着半径的增大，功率谱变小，即滤波后包含的高频分量越来越少，与低通滤波器刚好相反。  
@@ -70,20 +70,20 @@ Gaussian高通滤波器实际上是在其低通滤波器的基础上做一个简
 ####  Laplace高通滤波器  
 Laplace高通滤波器实际上是在其低通滤波器的基础上做一个简单的数学变换。在之前的算法框架面前改变滤波模板H即可；  
 **结果展示：**  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/3.1.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/3.2.png)   
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/3.3.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/3.4.png)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/3.1.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/3.2.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/3.3.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/3.4.jpg)  
 **结果分析：**  
 对比每组图像处理结果中的原始图像和滤波后的图像，可以看到滤波器的边缘增强效果。   
 由于Laplace高通滤波器将原始图像完全加回滤波后的结果，虽然解决了Butterworth滤波器和Gaussian滤波器出去傅里叶变换0频率分量的问题，使背景的强度和亮度都增加，但是同时也会引入噪声干扰，使图像出现一定程度上的失真。  
 ####  Unmask高通滤波器  
 Unmask高通滤波器将原图像减去低通滤波后的图像得到Gmask图像，再将原图像加上k倍Gmask得到边缘增强的图像，得到增强图像边缘的效果。  
 **结果展示：**  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/3.5.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/3.6.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/3.7.png)  
-![](https://github.com/cengzeyuan/hw5/tree/master/2160504116/3.8.png)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/3.5.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/3.6.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/3.7.jpg)  
+![](https://github.com/cengzeyuan/hw5/blob/master/2160504116tow/3.8.jpg)  
 **结果分析：**  
 对比每组图像处理结果中的原始图像和滤波后的图像，可以看到滤波器的边缘增强效果。   
 经过反锐化掩膜后图像的边缘信息相较前面三种高通滤波器会更加清晰，但同时也会带来过度锐化的问题，出现多重的轮廓。同时对于原图附带的噪音，反锐化掩模并没有抑制作用，k的倍数越大，噪音效果越明显。  
